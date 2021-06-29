@@ -34,7 +34,7 @@
                 <td> <img src="{{ asset('storage/'.$candidat->image) }}" width="50px" alt=""></td>
                 <td>{{ $candidat->description }}</td>
 
-                {{-- <td class="text-center"><a href="#" data-toggle="modal" data-target="#detailCandidatModal{{ $candidat->id }}"><i class="fa fa-eye text-success" aria-hidden="true"></i></a></td> --}}
+                <td class="text-center"><a href="#" data-toggle="modal" data-target="#detailCandidatModal{{$candidat->id}}"><i class="fa fa-eye text-success" aria-hidden="true"></i></a></td>
                 <td class="text-center"><a href="#"><i class="fa fa-edit text-warning" aria-hidden="true"></i></a></td>
                 <td class="text-center"><a href="#"><i class="fa fa-window-close text-danger" aria-hidden="true"></i></a></td>
             </tr>

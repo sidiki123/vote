@@ -27,7 +27,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="{{route('vote')}}" class="nav-link">
-                                        Votes
+                                        Candidats
                                     </a>
                                 </li>
                                 <li class="nav-item">

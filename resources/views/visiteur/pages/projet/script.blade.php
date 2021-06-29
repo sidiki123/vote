@@ -20,5 +20,3 @@
     <script src="assets/js/form-validator.min.js"></script>
 
     <script src="assets/js/contact-form-script.js"></script>
-
-    <script src="assets/js/main.js"></script>

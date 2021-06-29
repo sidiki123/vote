@@ -1,10 +1,11 @@
 <section id="campaign" class="campaigns-section ptb-100">
     <div class="container">
         <div class="section-title">
-            <span>Welcome to Gouba</span>
-            <h2>Latest Campaigns</h2>
-            <p>Experinces started sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
-                dolore magnat dipiscing liqua amet consectetur started consectetur adipiscing.</p>
+            <h4>Bienvenue sur  <span>Voting </span></h4>
+            <h2>Les dernières tendances</h2>
+            <p>
+                Augmentez les chances de votre candidat en votant au maximum. <br>
+            </p>
         </div>
         <div class="campaigns-slider owl-carousel d-block">
             @forelse ($candidats as $candidat)
@@ -17,29 +18,21 @@
                     <h3>{{ $candidat->nom }} {{ $candidat->prenom }}</h3>
                     <p>{{ $candidat->description }}</p>
                 </div>
-                {{-- <ul class="campaigns-list">
+                <ul class="campaigns-list text-center">
                     <li>
-                        Goal
-                        <span>$5600</span>
+                        Compteur
+                        <span>{{ $candidat->voters()->count()  }}votes</span>
                     </li>
-                    <li>
-                        Rised
-                        <span>$4678</span>
-                    </li>
-                    <li>
-                        Left
-                        <span>3 Days</span>
-                    </li>
-                </ul> --}}
-                <div class="campaigns-donate d-flex" style="justify-content: space-between">
+
+                </ul>
+                {{-- <div class="campaigns-donate " style="justify-content: space-between">
                     <form method="post" action="{{route('vote.candidat',$candidat->id) }}" >
                         @csrf
-                        <button class="btn btn-success" type="submit">Voter pour
+                        <button  class="btn btn-success align-center" type="submit">Voter pour
                     </button>
                     </form>
-                        <button class="btn btn-warning" type="submit">Détails</button>
-
-                </div>
+                    <button class="btn btn-warning" pd-popup-open="popupNew{{$candidat->id}}">Détails</button>
+                </div> --}}
             </div>
             @empty
                 <h1 class="text-center">Aucune candidature disponible</h1>

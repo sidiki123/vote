@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('/',[PageController::class,'home'])->name('home');
 
-Route::get('/votes',[PageController::class,'vote'])->name('vote');
+Route::get('/candidats',[PageController::class,'vote'])->name('vote');
 
 Route::get('/a-propos',[PageController::class,'about'])->name('about');
 

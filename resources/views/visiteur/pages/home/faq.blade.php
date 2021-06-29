@@ -5,7 +5,7 @@
                 <li class="accordion-item">
                     <a class="accordion-title active" href="javascript:void(0)">
                         <i class="fa fa-plus"></i>
-                        How do I know that I’ve Donated?
+                        C'est quoi <span>Voting</span> ?
                     </a>
                     <div class="accordion-content show">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -15,7 +15,7 @@
                 <li class="accordion-item">
                     <a class="accordion-title" href="javascript:void(0)">
                         <i class="fa fa-plus"></i>
-                        What is Our Economic Plan for this year?
+                        Quels sont les objectifs de ce concours?
                     </a>
                     <div class="accordion-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -25,7 +25,7 @@
                 <li class="accordion-item">
                     <a class="accordion-title" href="javascript:void(0)">
                         <i class="fa fa-plus"></i>
-                        How to Registering As Volunteer?
+                        Comment prendre part au concours?
                     </a>
                     <div class="accordion-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -35,7 +35,7 @@
                 <li class="accordion-item">
                     <a class="accordion-title" href="javascript:void(0)">
                         <i class="fa fa-plus"></i>
-                        Anyone Leading The As Volunteer?
+                        Comment voter pour un candidat?
                     </a>
                     <div class="accordion-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

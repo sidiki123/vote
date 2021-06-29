@@ -17,10 +17,10 @@
                             </li>
                         </ul>
                         <div class="slider-btn">
-                            <a href="#" class="default-btn">
+                            <a href="{{ route('register') }}" class="default-btn">
                                 S'inscrire pour voter
                             </a>
-                            <a href="#" class="optional-btn">
+                            <a href="{{ route('vote') }}" class="optional-btn">
                                 Listes des porteurs de projets
                             </a>
                         </div>
@@ -47,10 +47,10 @@
                             </li>
                         </ul>
                         <div class="slider-btn">
-                            <a href="#" class="default-btn">
+                            <a href="{{ route('register') }}" class="default-btn">
                                 S'inscrire pour voter
                             </a>
-                            <a href="#" class="optional-btn">
+                            <a href="{{ route('vote') }}" class="optional-btn">
                                 Listes des porteurs de projets
                             </a>
                         </div>

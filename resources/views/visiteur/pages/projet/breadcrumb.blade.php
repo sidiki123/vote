@@ -1,15 +1,15 @@
 <div class="page-title-area bg-11">
     <div class="container">
         <div class="page-title-content">
-            <h2>Event</h2>
+            <h2>Candidats</h2>
             <ul>
                 <li>
-                    <a href="index.html">
-                        Home
+                    <a href="{{ route('home') }}">
+                        Accueil
                     </a>
                 </li>
-                <li>Event</li>
-                <li class="active">Event</li>
+                <li>candidat</li>
+                <li class="active">voter</li>
             </ul>
         </div>
     </div>

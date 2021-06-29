@@ -2,180 +2,45 @@
     <section class="campaigns-section ptb-100">
         <div class="container">
             <div class="section-title">
-                <span>Welcome to Gouba</span>
-                <h2>Latest Campaigns</h2>
-                <p>Experinces started sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
-                    dolore magnat dipiscing liqua amet consectetur started consectetur adipiscing.</p>
+
+                <h2>Liste des différents participants</h2>
+                <p>
+                    Voter et permettez à votre candidat de remporter la compétition
+                </p>
+                <span style="color: red">NB: Inscription requise pour voter</span>
             </div>
-            <div class="campaigns-slider owl-carousel owl-theme">
+            <div class="campaigns-slider owl-carousel d-block">
+                @forelse ($candidats as $candidat)
                 <div class="campaigns-item">
                     <div class="image">
-                        <img src="assets/img/campaigns/image1.jpg" alt="image">
-                        <span>50%</span>
+                        <img src="{{ asset('storage/'.$candidat->image) }}" alt="image">
+                        <span style="width: 100%">{{ $candidat->title }}</span>
                     </div>
                     <div class="content">
-                        <h3>Education for Childreen</h3>
-                        <p>It is a long established sit amet ceetrisci velit sed quiLorem</p>
+                        <h3>{{ $candidat->nom }} {{ $candidat->prenom }}</h3>
+                        <p>{{ $candidat->description }}</p>
                     </div>
                     <ul class="campaigns-list">
-                        <li>
-                            Goal
-                            <span>$5600</span>
+                        <li>Compteur
+                        <span>500 votes</span>
                         </li>
-                        <li>
-                            Rised
-                            <span>$4678</span>
-                        </li>
-                        <li>
-                            Left
-                            <span>3 Days</span>
-                        </li>
+
                     </ul>
-                    <div class="campaigns-donate">
-                        <a href="#" class="donate-one">Donate Now</a>
-                        <a href="#" class="donate-two">100 Donor</a>
+                    <div class="campaigns-donate " style="justify-content: space-between">
+                        <form method="post" action="{{route('vote.candidat',$candidat->id) }}" >
+                            @csrf
+                            <button  class="btn btn-success align-center" type="submit">Voter pour
+                        </button>
+                        </form>
+                        {{-- <button class="btn btn-warning" pd-popup-open="popupNew{{$candidat->id}}">Détails</button> --}}
                     </div>
                 </div>
-                <div class="campaigns-item">
-                    <div class="image">
-                        <img src="assets/img/campaigns/image2.jpg" alt="image">
-                        <span>70%</span>
-                    </div>
-                    <div class="content">
-                        <h3>Food Campaign</h3>
-                        <p>It is a long established sit amet ceetrisci velit sed quiLorem</p>
-                    </div>
-                    <ul class="campaigns-list">
-                        <li>
-                            Goal
-                            <span>$5600</span>
-                        </li>
-                        <li>
-                            Rised
-                            <span>$4678</span>
-                        </li>
-                        <li>
-                            Left
-                            <span>3 Days</span>
-                        </li>
-                    </ul>
-                    <div class="campaigns-donate">
-                        <a href="#" class="donate-one">Donate Now</a>
-                        <a href="#" class="donate-two">100 Donor</a>
-                    </div>
-                </div>
-                <div class="campaigns-item">
-                    <div class="image">
-                        <img src="assets/img/campaigns/image3.jpg" alt="image">
-                        <span>67%</span>
-                    </div>
-                    <div class="content">
-                        <h3>Family Support</h3>
-                        <p>It is a long established sit amet ceetrisci velit sed quiLorem</p>
-                    </div>
-                    <ul class="campaigns-list">
-                        <li>
-                            Goal
-                            <span>$5600</span>
-                        </li>
-                        <li>
-                            Rised
-                            <span>$4678</span>
-                        </li>
-                        <li>
-                            Left
-                            <span>3 Days</span>
-                        </li>
-                    </ul>
-                    <div class="campaigns-donate">
-                        <a href="#" class="donate-one">Donate Now</a>
-                        <a href="#" class="donate-two">100 Donor</a>
-                    </div>
-                </div>
-                <div class="campaigns-item">
-                    <div class="image">
-                        <img src="assets/img/campaigns/image4.jpg" alt="image">
-                        <span>50%</span>
-                    </div>
-                    <div class="content">
-                        <h3>Education for Childreen</h3>
-                        <p>It is a long established sit amet ceetrisci velit sed quiLorem</p>
-                    </div>
-                    <ul class="campaigns-list">
-                        <li>
-                            Goal
-                            <span>$5600</span>
-                        </li>
-                        <li>
-                            Rised
-                            <span>$4678</span>
-                        </li>
-                        <li>
-                            Left
-                            <span>3 Days</span>
-                        </li>
-                    </ul>
-                    <div class="campaigns-donate">
-                        <a href="#" class="donate-one">Donate Now</a>
-                        <a href="#" class="donate-two">100 Donor</a>
-                    </div>
-                </div>
-                <div class="campaigns-item">
-                    <div class="image">
-                        <img src="assets/img/campaigns/image5.jpg" alt="image">
-                        <span>70%</span>
-                    </div>
-                    <div class="content">
-                        <h3>Food Campaign</h3>
-                        <p>It is a long established sit amet ceetrisci velit sed quiLorem</p>
-                    </div>
-                    <ul class="campaigns-list">
-                        <li>
-                            Goal
-                            <span>$5600</span>
-                        </li>
-                        <li>
-                            Rised
-                            <span>$4678</span>
-                        </li>
-                        <li>
-                            Left
-                            <span>3 Days</span>
-                        </li>
-                    </ul>
-                    <div class="campaigns-donate">
-                        <a href="#" class="donate-one">Donate Now</a>
-                        <a href="#" class="donate-two">100 Donor</a>
-                    </div>
-                </div>
-                <div class="campaigns-item">
-                    <div class="image">
-                        <img src="assets/img/campaigns/image6.jpg" alt="image">
-                        <span>67%</span>
-                    </div>
-                    <div class="content">
-                        <h3>Family Support</h3>
-                        <p>It is a long established sit amet ceetrisci velit sed quiLorem</p>
-                    </div>
-                    <ul class="campaigns-list">
-                        <li>
-                            Goal
-                            <span>$5600</span>
-                        </li>
-                        <li>
-                            Rised
-                            <span>$4678</span>
-                        </li>
-                        <li>
-                            Left
-                            <span>3 Days</span>
-                        </li>
-                    </ul>
-                    <div class="campaigns-donate">
-                        <a href="#" class="donate-one">Donate Now</a>
-                        <a href="#" class="donate-two">100 Donor</a>
-                    </div>
-                </div>
+                @empty
+                    <h1 class="text-center">Aucune candidature disponible</h1>
+                @endforelse
             </div>
         </div>
     </section>
+
+
+

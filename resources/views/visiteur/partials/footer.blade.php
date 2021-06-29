@@ -5,7 +5,7 @@
 
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="single-footer-widget">
                         <div class="logo">
                             <a href="index.html">
@@ -18,125 +18,56 @@
                                 <a href="tel:4498886660000">+449 888 666 0000</a>
                             </li>
                             <li>
-                                <i class="fa fa-envelope"></i>
-                                <a
-                                    href="https://templates.envytheme.com/cdn-cgi/l/email-protection#acc4c9c0c0c3eccbc3d9cecd82cfc3c1"><span
-                                        class="__cf_email__"
-                                        data-cfemail="4b232e2727240b2c243e292a65282426">[email&#160;protected]</span></a>
-                            </li>
-                            <li>
-                                <i class="fa fa-envelope"></i>
-                                <a
-                                    href="https://templates.envytheme.com/cdn-cgi/l/email-protection#6a03040c052a0d051f080b44090507"><span
-                                        class="__cf_email__"
-                                        data-cfemail="0960676f66496e667c6b68276a6664">[email&#160;protected]</span></a>
-                            </li>
-                            <li>
                                 <i class="fa fa-crosshairs"></i>
-                                855 Road, Brooklyn Street New York 600
+                                Ouaga 2000, Ouagadougou Burkina Faso
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="single-footer-widget">
-                        <h3>About Us</h3>
+                        <h3>Nos pages</h3>
                         <ul class="quick-links">
                             <li>
                                 <i class="flaticon-right-arrow"></i>
-                                <a href="#">Who We Are</a>
+                                <a href="{{ route('home') }}">Accueil</a>
                             </li>
                             <li>
                                 <i class="flaticon-right-arrow"></i>
-                                <a href="#">Volunteers</a>
+                                <a href="{{ route('vote') }}">Voter pour un candidat</a>
                             </li>
-                            <li>
-                                <i class="flaticon-right-arrow"></i>
-                                <a href="#">Forum Support</a>
-                            </li>
-                            <li>
-                                <i class="flaticon-right-arrow"></i>
-                                <a href="#">Upcoming Events</a>
-                            </li>
-                            <li>
-                                <i class="flaticon-right-arrow"></i>
-                                <a href="#">Trending News</a>
-                            </li>
-                            <li>
-                                <i class="flaticon-right-arrow"></i>
-                                <a href="#">Causes</a>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="single-footer-widget">
-                        <h3>Quick Link</h3>
+                        <h3>Liens utiles</h3>
                         <ul class="quick-links">
                             <li>
                                 <i class="flaticon-right-arrow"></i>
-                                <a href="#">Contact Us</a>
+                                <a href="{{ route('contact') }}">Nous contacter</a>
                             </li>
                             <li>
                                 <i class="flaticon-right-arrow"></i>
-                                <a href="#">About Us</a>
+                                <a href="{{ route('register') }}">S'inscrire pour voter</a>
                             </li>
                             <li>
                                 <i class="flaticon-right-arrow"></i>
-                                <a href="#">Event List</a>
+                                <a href="{{ route('login') }}">Se connecter</a>
                             </li>
                             <li>
                                 <i class="flaticon-right-arrow"></i>
-                                <a href="#">Blog List</a>
+                                <a href="javascript:;">Conditions d'utilisation</a>
                             </li>
                             <li>
                                 <i class="flaticon-right-arrow"></i>
-                                <a href="#">Our Team</a>
-                            </li>
-                            <li>
-                                <i class="flaticon-right-arrow"></i>
-                                <a href="#">Refund Policy</a>
+                                <a href="javascript:;">Politiques de confidentialité</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h3>Photo Gallery</h3>
-                        <ul class="gallery">
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/photo/1.png" alt="image">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/photo/2.png" alt="image">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/photo/3.png" alt="image">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/photo/4.png" alt="image">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/photo/5.png" alt="image">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/photo/6.png" alt="image">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -148,9 +79,9 @@
                 <div class="col-lg-6">
                     <div class="footer-bottom-text">
                         <p>
-                            Copyright @ 2021 <span>Gouba</span>. All Rights Reserved by
-                            <a href="https://envytheme.com/" target="_blank">
-                                EnvyTheme
+                            Copyright @ 2021 <span>Voting</span>. Tous droits réservés par
+                            <a href="javascript:;" target="_blank">
+                                Voting
                             </a>
                         </p>
                     </div>
